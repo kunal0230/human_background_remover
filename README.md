@@ -26,11 +26,6 @@ Make sure you have the following installed:
 - OpenCV
 - Mediapipe
 
-You can install the required packages using:
-```bash
-pip install -r requirements.txt
-
-
 
 
 
