@@ -17,6 +17,14 @@ The application uses [Mediapipe](https://mediapipe.dev) for human segmentation a
 3. The background is removed and replaced with transparency (alpha channel).
 4. The user can download the image in PNG format.
 
+## Screenshots
+
+### Home Page
+![Home Page](images/## Screenshots
+
+### Home Page
+![Home Page](images/Screenshot2024-10-12at6.39.55AM(2).png)
+
 ## Getting Started
 
 ### Prerequisites
