@@ -23,7 +23,7 @@ The application uses [Mediapipe](https://mediapipe.dev) for human segmentation a
 ![Home Page](images/## Screenshots
 
 ### Home Page
-![Home Page](images/Screenshot2024-10-12at6.39.55AM(2).png)
+![Home Page](images/output)
 
 ## Getting Started
 
