@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Removal Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Background Removal Web App</h1>
+        <p>Upload an image and remove its background using machine learning!</p>
+
+        <div class="upload-box">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" class="upload-input">
+                <input type="submit" value="Upload Image" class="upload-btn">
+            </form>
+        </div>
+
+        {% if original_image and output_image %}
+        <div id="preview-section">
+            <div class="image-preview-container">
+                <h3>Original Image</h3>
+                <img src="{{ original_image }}" alt="Original Image" class="image-preview">
+            </div>
+            <div class="image-preview-container">
+                <h3>Background Removed</h3>
+                <img src="{{ output_image }}" alt="Processed Image" class="image-preview">
+                <br>
+                <!-- Download button for the transparent PNG -->
+                <a href="{{ output_image }}" download class="download-btn">Download PNG</a>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
